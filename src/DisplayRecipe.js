@@ -1,8 +1,8 @@
 import React from "react";
 
-function DisplayRecipe({ recipe, index, deleteRecipe }) {
+function DisplayRecipe({ recipe, deleteRecipe }) {
     return (
-        <tr className="recipe" key="index">
+        <tr className="recipe">
             <td style={{width:"10%"}}>{recipe.name}</td>
             <td style={{width:"10%"}}>{recipe.cuisine}</td>
             <td style={{width:"10%"}}><img class="scale-down" alt={recipe.name} name="photo" src={recipe.photo} /></td>
