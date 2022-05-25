@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function RecipeCreate({ recipe }) {
+function RecipeCreate({ addRecipe }) {
 
 
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
@@ -26,7 +26,7 @@ function RecipeCreate({ recipe }) {
 
   const handleSubmit = (event) =>{
     event.preventDefault();
-    recipe(formData);
+    addRecipe(formData);
     setFormData({ ...initialFormState })
   }
  
